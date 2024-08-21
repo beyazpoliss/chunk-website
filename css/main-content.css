@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1600px;
+  max-width: 1550px;
   margin: 20px auto;
   padding: 50px;
   gap: 1rem;
@@ -15,7 +15,7 @@
 
 .text-section h1 {
   font-size: 48px;
-  background: -webkit-linear-gradient(yellow,white);
+  background: -webkit-linear-gradient(rgb(255, 230, 0),white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: -0.3rem;
