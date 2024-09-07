@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/main-content.css">
     <link rel="stylesheet" href="css/maps.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 </head>
 <body>
     <div class="background"></div>
@@ -25,7 +27,7 @@
         <nav>
             <div class="logo">
                 <a href="#">
-                    <img src="css/assets/logo2.png" alt="ChunkRoyal Logo">
+                    <img src="css/assets/logo.png" alt="ChunkRoyal Logo">
                 </a>
             </div>
             <ul class="nav-links">
@@ -43,57 +45,56 @@
     
     <main>
         <section class="top">
-
             <div class="container">
                 <div class="text-section">
                     <h1>Krallık Kılıçları: Efsaneler</h1>
-                    <p>Devasa eş zamanlı strateji yeteneklerini kullanarak,</p>
-                    <p>bu asil diyarlarda hayatta kalmak ve gelişmek için diren.</p>
-                    <p>müttefikler edin, stratejilerini hazırla, hedefler koy, çok</p>
-                    <p>büyük savaşlara katıl ve efsane olma yolunda ilerle.</p>
+                    <p>Devasa eş zamanlı strateji yeteneklerini kullanarak, bu asil diyarlarda hayatta kalmak ve gelişmek için diren. müttefikler edin, stratejilerini hazırla, hedefler koy, çok büyük savaşlara katıl ve efsane olma yolunda ilerle.</p>
+                    <div class="kr-button-container">
+                        <a href="#" class="kr-button kr-button-join">
+                            <span class="kr-button-content">
+                                <i class="fas fa-gamepad"></i>
+                                <span class="kr-button-text">Oyuna Katıl -></span>
+                            </span>
+                        </a>
+                        <a href="#" class="kr-button kr-button-wiki">
+                            <span class="kr-button-content">
+                                <i class="fas fa-book"></i>
+                                <span class="kr-button-text">Krallık Wikisi ></span>
+                            </span>
+                        </a>
+                    </div>
                 </div>
+                
                 <div class="image-section">
                     <div class="three-d-border">
                         <img src="css/assets/tr.png" alt="Krallık Kılıçları">
                     </div>
                 </div>
-            </div>    
-
+            </div>
         </section>
-        <section class="maps">
-            <h2>Çatalhöyük haritaları, bütün bu kasvetli ve diğer canlı toprakları keşfetmek için harika gözüküyor..</h2>
-            <div class="container">
-                <div class="maps-grid">
-                    
-                    <div class="map-item">
-                        <img src="css/assets/spawn.png" alt="Harita 2">
-                        <div class="online-count">
-                            <i class="fas fa-user"></i> <p>14.221 Kişi Aktif.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="map-item">
-                        <img src="css/assets/mines.png" alt="Harita 3">
-                        <div class="online-count">
-                            <i class="fas fa-user"></i> <p>4.092 Kişi Aktif.</p>
-                        </div>
-                    </div>
-    
-                    <div class="map-item">
-                        <img src="css/assets/fisher.png" alt="Harita 1">
-                        <div class="online-count">
-                            <i class="fas fa-user"></i> <p>3.984 Kişi Aktif.</p>
-                        </div>
-                    </div>
 
-                    <div class="map-item">
-                        <img src="css/assets/nether.png" alt="Harita 1">
-                        <div class="online-count">
-                            <i class="fas fa-user"></i> <p>2.091 Kişi Aktif.</p>
-                        </div>
-                    </div>
-
-
+        <section class="performance-section">
+            <h2 style="color: aliceblue;">Krallık Kılıçları yüzbinler için tasarlandı. Ezber bozan oyun tasarımı.</h2>
+            <div class="performance-grid">
+                <div class="performance-item">
+                    <h3>Oyun Deneyimi</h3>
+                    <p>Madencilik, Balıkçılık, Odunculuk gibi oyun mekanikleri artık daha iyi!</p>
+                </div>
+                <div class="performance-item">
+                    <h3>Güçlendirilmiş Ağ</h3>
+                    <p>Birlikte çalışabilen binlerce sunucu ile  *500.000 oyuncuya kadar tam performans.</p>
+                </div>
+                <div class="performance-item">
+                    <h3>Her Zaman Çevrimiçi</h3>
+                    <p>Çoklu lokasyon desteği ile Türkiye'nin her yerinde her zaman çevrimiçi deneyim.</p>
+                </div>
+                <div class="performance-item">
+                    <h3>Devasa Ölçekli Strateji Dünyası ve Oynanabilirlik</h3>
+                    <p>Yüz binlerce oyuncuyla rekabet et. 50.000 kişilik imparatorluklar kur. Köyleri ele geçir, Şehirleri fethet, Kaleleri zaptet. Stratejini belirle ve efsanevi bir hükümdar ol!</p>
+                </div>
+                <div class="performance-item">
+                    <h3>Hızlı ve Dostça Destek</h3>
+                    <p>Karşılaştığın bir bilinmezlik olursa diye her an 7/24 destek ekibi.</p>
                 </div>
             </div>
         </section>
@@ -130,6 +131,8 @@
                             <i class="fas fa-user"></i> <p>2.091 Kişi Aktif.</p>
                         </div>
                     </div>
+
+
                 </div>
             </div>
         </section>
@@ -140,7 +143,7 @@
             <div class="footer-section about">
                 <h3>HAKKIMIZDA</h3>
                 <div class="desc">
-                    <p>ChunkRoyal, TaleRift tarafından oluşturulan, çok oyunculu devasa eş zamanlı strateji oyunu, büyük minecraft ağıdır.</p>
+                    <p>ChunkRoyal, * tarafından oluşturulan, çok oyunculu devasa eş zamanlı strateji oyunu, büyük minecraft ağıdır.</p>
                 </div>
                 <div class="social-media">
                     <a href="#"><i class="fab fa-facebook"></i></a>

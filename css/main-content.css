@@ -13,22 +13,22 @@
   max-width: 50%;
 }
 
+
 .text-section h1 {
-  font-size: 48px;
-  background: -webkit-linear-gradient(rgb(255, 230, 0),white);
+  font-size: 52px;
+  background: -webkit-linear-gradient(gold,white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: -0.3rem;
+  margin-bottom: -1.5rem;
 }
 
 .text-section p {
   background: -webkit-linear-gradient( #ffffff, rgb(228, 228, 228));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-top: 0.5rem;
   font-size: 1.5em;
+  margin-bottom: 2rem;
   line-height: 1.5;
-  margin: 3px;
 }
 
 .image-section {
@@ -75,5 +75,207 @@
 
   .text-section, .image-section {
       max-width: 100%;
+  }
+}
+
+.kr-button-container {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 3rem;
+}
+
+.kr-button {
+  position: relative;
+  padding: 15px 30px;
+  border-radius: 16px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.kr-button-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.kr-button i {
+  font-size: 35px;
+}
+
+.kr-button-join::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #FFE600, #FFA500);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.kr-button-wiki::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #d366af60, #ffffff);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.kr-button-join {
+  background: #FFE600;
+  color: #000;
+  box-shadow: 0 4px 15px rgba(255, 230, 0, 0.3);
+}
+
+.kr-button-wiki {
+  background: #fff;
+  color: #000;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+.kr-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.kr-button:hover::before {
+  opacity: 1;
+}
+
+.kr-button-join:hover {
+  color: #fff;
+}
+
+.kr-button-wiki:hover {
+  color: #000000;
+}
+
+.kr-button::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 80%);
+  transform: scale(0);
+  transition: transform 0.5s ease-out;
+}
+
+.kr-button:active::after {
+  transform: scale(1);
+  transition: transform 0s;
+}
+
+@media (max-width: 768px) {
+  .kr-button-container {
+      flex-direction: column;
+      align-items: stretch;
+  }
+  
+  .kr-button {
+      text-align: center;
+  }
+}
+
+.performance-section {
+  padding: 50px 0;
+  font-family: 'Poppins', sans-serif;
+  border-top: rgb(141, 141, 141, 0.226) 1px solid;
+}
+
+.performance-section h2 {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.performance-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 20px;
+  max-width: 1550px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.performance-item {
+  background: rgba(58, 58, 58, 0.171);
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.performance-item:hover {
+  transform: translateY(-5px);
+}
+
+.performance-item h3 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: -1rem;
+  margin-top: 0.2rem;
+}
+
+.performance-item p {
+  font-size: 20px;
+  line-height: 1.5;
+  padding-top: 10px;
+}
+
+.performance-item:hover {
+  background-color: wheat;
+  color: #000;
+}
+
+/* Özel boyutlandırmalar */
+.performance-item:nth-child(1) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.performance-item:nth-child(2) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.performance-item:nth-child(3) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.performance-item:nth-child(4) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.performance-item:nth-child(5) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+@media (max-width: 768px) {
+  .performance-grid {
+      grid-template-columns: 1fr;
+  }
+  
+  .performance-item:nth-child(n) {
+      grid-column: span 1;
   }
 }

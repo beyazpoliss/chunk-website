@@ -16,8 +16,7 @@ body {
 }
 
 .background {
-    background-image: url('assets/background.png');
-    background-color: rgba(0, 0, 0, 0.388); /* Siyah renk, %50 opaklık */
+    background-color: rgba(0, 0, 0, 0.9); /* Siyah renk, %50 opaklık */
     background-blend-mode: darken; /* Renk karıştırma modu */
     position: fixed;
     opacity: 3;
@@ -25,11 +24,14 @@ body {
     height: 100%;
     z-index: -1;
 }
+
 main {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
+
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
