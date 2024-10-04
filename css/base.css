@@ -24,7 +24,6 @@ body {
     height: 100%;
     z-index: -1;
 }
-
 main {
     flex-grow: 1;
     display: flex;
