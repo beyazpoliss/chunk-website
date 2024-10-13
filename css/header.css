@@ -6,9 +6,8 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
-    background: rgba(18, 18, 18, 1);
-    border-bottom: rgba(0, 0, 0, 0.479) 1px solid;
-    border-left: 10px;
+    background-color: rgba(0, 0, 0, 0.322);
+    border-bottom: rgba(218, 165, 32, 0.596) 1px solid;
 }
 
 nav {
@@ -17,7 +16,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1550px;
     padding: 0 19%;
     margin: 0 auto;
 }
@@ -110,13 +108,17 @@ nav {
 .btn-login {
     background-color: transparent;
     color: #ecedf1;
-    border: 2px solid #e9ffd4;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    width: 150px;
 }
 
 .btn-register {
     background-color: transparent;
     color: #ecf0f1;
-    border: 2px solid #ff7d31;
+    border: 2px solid #ffb30e;
+    border-radius: 8px;
+    width: 150px;
 }
 
 .btn:hover {
@@ -129,7 +131,7 @@ nav {
 }
 
 .btn-register:hover {
-    background-color: rgba(255, 48, 11, 0.562);
+    background-color: rgb(255, 243, 68);
 }
 
 .nav-links a i, .btn-login i, .btn-register i {
